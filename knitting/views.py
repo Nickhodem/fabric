@@ -34,3 +34,7 @@ def register_view(request):
     else:
         form=RegisterForm()
     return  render(request, '/Documents/Django/fabric/templates/knitting/registration.html', {'form':form})
+
+def course1(request):
+    #TODO wyswietlaj plakat na podstawie wybranego kursu
+    return render(request, '/Documents/Django/fabric/templates/knitting/course1.html',{})

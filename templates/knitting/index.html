@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Fabric Action</title>
-<link rel="stylesheet" href="{% static "css/index.css" %}">
+    <link rel="stylesheet" href="{% static "css/index.css" %}">
 
 
 </head>
@@ -23,11 +23,11 @@
 
         Zbliżające się kursy:
         {% if categories %}
-        <ul>
+
             {% for category in categories %}
             <li>{{category.title}}</li>
             {% endfor %}
-        </ul>
+
         {% else %}
             <strong>Brak zbliżających się kursów</strong>
         {% endif %}
@@ -38,11 +38,12 @@
 
     <div id="tutors">
         Nasi Tutorzy:
-        <ul>
+
             {% for tut in tuts %}
             <li>{{tut.name}}</li>
             {% endfor %}
-        </ul>
+
+        <a href="/course1">DigitalKnitting</a>
 
 
     </div>
