@@ -1,0 +1,24 @@
+
+.page-header {
+    background-color: #ff9400;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+#welcome{
+    width=50%;
+    height=30px;
+    background-color: #FC1AEE;
+
+    -webkit-border-top-left-radius: 1px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-topleft: 1px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 2px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 2px;
+}

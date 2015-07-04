@@ -1,0 +1,44 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fabric Action</title>
+    <link rel="stylesheet" href="{% static "css/index.css" %}">
+
+
+</head>
+<body>
+    <p>
+    <h1 class="page-header">Index czyli wszystko na bieżąco</h1>
+    </p>
+
+    <div id="welcome">
+    Zapraszamy do uczestnictwa w naszym kursie
+    Zarejestruj się już teraz:</br>
+    <a href="/registration/">rejestracja</a>
+    </div>
+
+
+
+    <p>
+        Dowiedz sie
+
+        <a href="/about/">wiecej</a>
+
+    </p>
+    <div id="welcome">
+
+        Zbliżające się kursy:
+        {% if categories %}
+        <ul>
+            {% for category in categories %}
+            <li>{{category.title}}</li>
+            {% endfor %}
+        </ul>
+        {% else %}
+            <strong>Brak zbliżających się kursów</strong>
+        {% endif %}
+
+        </div>
+</body>
+</html>
