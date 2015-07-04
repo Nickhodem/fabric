@@ -12,6 +12,7 @@ class RegisterForm(forms.ModelForm):
     surname=forms.CharField(max_length=30, help_text="Nazwisko")
     hashname=forms.CharField(max_length=30, help_text="jak mamy sie do Ciebie zwracac?[ksywa]")
     email=forms.EmailField(help_text="email")
+    registered_day=forms.DateTimeField(widget=forms.HiddenInput(), initial=timezone.now)
 
     class Meta:
         model = Student     #zapis metadanych do ktorego modelu odnosi sie formularz

@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Fabric Action</title>
-    <link rel="stylesheet" href="{% static "css/index.css" %}">
+<link rel="stylesheet" href="{% static "css/index.css" %}">
 
 
 </head>
@@ -19,14 +19,7 @@
     </div>
 
 
-
-    <p>
-        Dowiedz sie
-
-        <a href="/about/">wiecej</a>
-
-    </p>
-    <div id="welcome">
+    <div id="courses">
 
         Zbliżające się kursy:
         {% if categories %}
@@ -38,7 +31,20 @@
         {% else %}
             <strong>Brak zbliżających się kursów</strong>
         {% endif %}
+                Dowiedz sie
 
+        <a href="/about/">wiecej</a>
         </div>
+
+    <div id="tutors">
+        Nasi Tutorzy:
+        <ul>
+            {% for tut in tuts %}
+            <li>{{tut.name}}</li>
+            {% endfor %}
+        </ul>
+
+
+    </div>
 </body>
 </html>

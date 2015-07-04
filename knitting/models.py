@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.utils import timezone
 class Tutor(models.Model):
     name=models.CharField(max_length=25, unique=False)
     surname=models.CharField(max_length=30, unique=False)
@@ -29,6 +29,8 @@ class Student(models.Model):
     hashname=models.CharField(max_length=30, unique=True)
     email=models.EmailField()
     paid=models.BooleanField(default=False)
+    registered_day=models.DateTimeField(default=timezone.now)
+
     def __unicode__(self):
         return self.hashname
 

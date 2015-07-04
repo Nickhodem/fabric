@@ -1,13 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from knitting.models import Student, Course
+from knitting.models import Student, Course, Tutor
 from knitting.forms import RegisterForm
 from django.utils import timezone
 import datetime
 def index(request):
 
     upcoming_courses=Course.objects.filter(start_date__gte=timezone.now()).order_by('start_date')
-    context_dict={'categories': upcoming_courses}
+    tutors=Tutor.objects.order_by('name').exclude(name='Nikodem') #wylaczamy Nikodema bo on nie jest tutorem a jest w bazie
+    context_dict={'categories': upcoming_courses, 'tuts':tutors}
     return render(request, '/Documents/Django/fabric/templates/knitting/index.html',context_dict)
 
 def about(request):
