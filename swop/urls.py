@@ -2,10 +2,10 @@ from django.conf.urls import patterns, url, include
 from swop import views
 from django.conf import settings
 from django.conf.urls.static import static
-from swop.views import ProfileDetailView, ProfileImageView
+from swop.views import ProfileDetailView, ProfileImageView, ProfileImageIndexView
 
 urlpatterns = patterns('',
-    #url(r'^$', ProfileImageIndexView.as_view(), name='home'),
+    url(r'^imageindex/', ProfileImageIndexView.as_view(), name='home'),
     url(r'^$', views.swopengine, name='swop'),
 
     url(r'^upload/', ProfileImageView.as_view(), name='profile_image_upload'),

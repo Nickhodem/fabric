@@ -6,5 +6,11 @@
 </head>
 <body>
 profil image view
+
+    {% for row in object_list %}
+
+      <li> <img src={{ row.image.url }} width=30%/></li>
+    {% endfor %}
+
 </body>
 </html>

@@ -8,15 +8,6 @@ from django.views.generic import FormView, DetailView, ListView
 from swop.forms import ProfileImageForm
 from swop.models import ProfileImage
 
-def swopengine(request):
-    return HttpResponse('Lets <a href="/swop/upload/">upload</a> your files')
-def uploaded():
-    #odpowiedz na poprawne zarejestrowanie sie
-    return HttpResponse('Thanks for uploading </br> powrot do strony glownej </br> <a href="http://127.0.0.1:8000/">powrot</a>')
-
-
-
-
 class ProfileImageView(FormView):
     template_name = '/Documents/Django/fabric/templates/swop/profile_image_form.html'
     form_class = ProfileImageForm
@@ -29,9 +20,8 @@ class ProfileImageView(FormView):
 
     def get_success_url(self):
         #return HttpResponse('Thanks for uploading </br> powrot do strony glownej </br> <a href="http://127.0.0.1:8000/">powrot</a>')
-        print self.id
-        return reverse('profile_image', kwargs={'pk':self.id})
 
+        return reverse('profile_image', kwargs={'pk':self.id})
 
 class ProfileDetailView(DetailView):
     model=ProfileImage
@@ -39,9 +29,26 @@ class ProfileDetailView(DetailView):
     context_object_name = 'image'
 class ProfileImageIndexView(ListView):
     model=ProfileImage
-    template_name = '/Documents/Django/fabric/templates/swop/profile_image_view.html'
+    template_name = '/Documents/Django/fabric/templates/swop/profil_image_view.html'
     context_object_name = 'images'
     queryset = ProfileImage.objects.all()
+
+
+def swopengine(request):
+
+    category_list=ProfileImage.objects.all()
+    context_dict={'categories': category_list}
+
+    return render(request,'/Documents/Django/fabric/templates/swop/swopengine.html', context_dict)
+'''
+def swopengine(request):
+
+    return HttpResponse('Lets <a href="/swop/upload/">upload</a> your files')
+'''
+
+def uploaded():
+    #odpowiedz na poprawne zarejestrowanie sie
+    return HttpResponse('Thanks for uploading </br> powrot do strony glownej </br> <a href="http://127.0.0.1:8000/">powrot</a>')
 
 
 
