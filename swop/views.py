@@ -29,7 +29,7 @@ class ProfileImageView(FormView):
 
     def get_success_url(self):
         #return HttpResponse('Thanks for uploading </br> powrot do strony glownej </br> <a href="http://127.0.0.1:8000/">powrot</a>')
-
+        print self.id
         return reverse('profile_image', kwargs={'pk':self.id})
 
 
