@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from knitting.models import Student, Course, Tutor
 from knitting.forms import RegisterForm
 from django.utils import timezone
-import datetime
+
 def index(request):
 
     upcoming_courses=Course.objects.filter(start_date__gte=timezone.now()).order_by('start_date')

@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+
 class Tutor(models.Model):
     name=models.CharField(max_length=25, unique=False)
     surname=models.CharField(max_length=30, unique=False)
@@ -11,7 +12,7 @@ class Tutor(models.Model):
 
 class Course(models.Model):
     title=models.CharField(max_length=128, unique=False)
-    tutors=models.ForeignKey(Tutor)
+    tutor=models.ForeignKey(Tutor)
     start_date=models.DateField()
     finish_date=models.DateField()
     price=models.FloatField()
@@ -27,10 +28,11 @@ class Student(models.Model):
     name=models.CharField(max_length=25, unique=False)
     surname=models.CharField(max_length=30, unique=False)
     hashname=models.CharField(max_length=30, unique=True)
-    email=models.EmailField()
+    email=models.EmailField(unique=True)
     paid=models.BooleanField(default=False)
     registered_day=models.DateTimeField(default=timezone.now)
 
     def __unicode__(self):
         return self.hashname
+
 
