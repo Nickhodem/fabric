@@ -1,2 +1,4 @@
-media
-static/images
+**/media
+**/static/images
+TODO
+.gitignore
