@@ -36,10 +36,8 @@ class ProfileImageIndexView(ListView):
 
 def swopengine(request):
 
-    category_list=ProfileImage.objects.all()
-    context_dict={'categories': category_list}
 
-    return render(request,'/Documents/Django/fabric/templates/swop/swopengine.html', context_dict)
+    return render(request,'/Documents/Django/fabric/templates/swop/swopengine.html', {})
 '''
 def swopengine(request):
 

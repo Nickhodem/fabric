@@ -12,7 +12,7 @@ class Tutor(models.Model):
 
 class Course(models.Model):
     title=models.CharField(max_length=128, unique=False)
-    tutor=models.ForeignKey(Tutor)
+    tutor=models.ForeignKey(Tutor, null=True)
     start_date=models.DateField()
     finish_date=models.DateField()
     price=models.FloatField()

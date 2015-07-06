@@ -1,21 +1,41 @@
-{% extends "knitting/base.html" %}
 <!DOCTYPE html>
 <html>
 <body>
+{% extends '/Documents/Django/fabric/templates/knitting/base.html' %}
+
 
 {% block content %}
-    <h1>Index czyli wszystko na bierząco</h1>
-    <p>
-    Zapraszamy do uczestnictwa w naszym kursie
-    Zarejestruj się już teraz:</br>
-    <a href="/registration/">rejestracja</a>
-    </p>
-    <p>
-        Dowiedz sie
+<div id="courses">
+        <h1>Index czyli wszystko na bieżąco</h1>
+        Zbliżające się kursy:
+        {% if categories %}
+
+            {% for category in categories %}
+            <li>{{category.title}}</li>
+            {% endfor %}
+
+        {% else %}
+            <strong>Brak zbliżających się kursów</strong>
+        {% endif %}
+                Dowiedz sie
 
         <a href="/about/">wiecej</a>
+        </div>
 
-    </p>
+    <div id="tutors">
+        Nasi Tutorzy:
+
+            {% for tut in tuts %}
+            <li>{{tut.name}}</li>
+            {% endfor %}
+
+        <a href="/course1">DigitalKnitting</a>
+        <p>
+            <a href="swop/">Upload plików</a>
+        </p>
+
+
+    </div>
 {% endblock content %}
 </body>
 </html>

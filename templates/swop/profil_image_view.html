@@ -9,7 +9,7 @@ profil image view
 
     {% for row in object_list %}
 
-      <li> <img src={{ row.image.url }} width=30%/></li>
+      <li><a href={{ row.image.url }} >  <img src={{ row.image.url }} width=30%/> </a></li>
     {% endfor %}
 
 </body>
