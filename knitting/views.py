@@ -4,6 +4,10 @@ from knitting.models import Student, Course, Tutor
 from knitting.forms import RegisterForm
 from django.utils import timezone
 
+def test(request):
+    return render(request, '/Documents/Django/fabric/templates/knitting/test.html',{})
+
+
 def index(request):
 
     upcoming_courses=Course.objects.filter(start_date__gte=timezone.now()).order_by('start_date')

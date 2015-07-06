@@ -1,0 +1,162 @@
+body{
+    margin: 0px; /* usuniecie marginesow narzuconych */
+}
+
+/*wszystkie warunki dla wysuwanej listy */
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    border:1px solid #CCC;
+    width:100%;
+    box-shadow:0 6px 6px -6px #666;
+}
+
+/* wygląd elementów - li */
+ul li {
+    border-top:1px solid #CCC;
+}
+
+/* wygląd pierwszego elementu - li */
+ul li:first-child {
+    border-top:none;
+}
+
+/* wygląd elementów - a */
+ul li a {
+    display:block;
+    text-decoration:none;
+    background-color:#EEE;
+    padding:10px;
+    text-align:center;
+    color:#00A0AA;
+    text-shadow:1px 1px 0 #FFF, 1px 2px 0 #AAA, 1px 2px 6px #AAA;
+    font-size:18px;
+    border:1px solid #FFF;
+    background-image:url('obrazek.png');
+    background-repeat:repeat-x;
+    background-image:radial-gradient(ellipse at bottom, #FFF 0%, #DDD 100%);
+}
+
+/* wygląd elementu - a - w momencie najechania na niego kursorem myszki */
+ul li a:hover {
+    color:#000;
+    background-color:#FFF;
+    background-image:none;
+}
+
+#menu{
+    margin-top:11.7em;
+    line-height:30px;
+    position:fixed;
+    left:-150px;
+    transition:1s;
+    -webkit-transition:1s; /* dla Google Chrome, Safari, Opera 15+ */
+}
+#menu:hover {
+    left:0;
+}
+
+/* KONIEC warunkow dla wysuwanego menu*/
+
+/*Nagłówek */
+#header{
+    width:100%;
+    height:25em; /*odsunac o tyle samo menu*/
+    text-align: right;
+    text-shadow:10px 1px 35px #DA7C20;
+    background: rgb(228,245,252); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(228,245,252,1) 0%, rgba(191,232,249,1) 29%, rgba(191,232,249,1) 29%, rgba(191,232,249,1) 37%, rgba(159,216,239,1) 47%, rgba(159,216,239,1) 68%, rgba(42,176,237,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(228,245,252,1)), color-stop(29%,rgba(191,232,249,1)), color-stop(29%,rgba(191,232,249,1)), color-stop(37%,rgba(191,232,249,1)), color-stop(47%,rgba(159,216,239,1)), color-stop(68%,rgba(159,216,239,1)), color-stop(100%,rgba(42,176,237,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(228,245,252,1) 0%,rgba(191,232,249,1) 29%,rgba(191,232,249,1) 29%,rgba(191,232,249,1) 37%,rgba(159,216,239,1) 47%,rgba(159,216,239,1) 68%,rgba(42,176,237,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(228,245,252,1) 0%,rgba(191,232,249,1) 29%,rgba(191,232,249,1) 29%,rgba(191,232,249,1) 37%,rgba(159,216,239,1) 47%,rgba(159,216,239,1) 68%,rgba(42,176,237,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(228,245,252,1) 0%,rgba(191,232,249,1) 29%,rgba(191,232,249,1) 29%,rgba(191,232,249,1) 37%,rgba(159,216,239,1) 47%,rgba(159,216,239,1) 68%,rgba(42,176,237,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(228,245,252,1) 0%,rgba(191,232,249,1) 29%,rgba(191,232,249,1) 29%,rgba(191,232,249,1) 37%,rgba(159,216,239,1) 47%,rgba(159,216,239,1) 68%,rgba(42,176,237,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=0 ); /* IE6-9 */
+
+}
+#title{
+    font-family:Helvetica, sans-serif;
+    font-size: 7em;
+    color: #FF8000;
+
+}
+
+/*Koniec naglowka*/
+
+/*Main Body */
+#body{
+    width:100%;
+    height: 1000px;
+    background-color: rgba(72, 210, 232, 0.4);
+    /*padding-left: 30px;
+    /*margin-left:210px;*/
+
+
+}
+
+
+#pudelko {
+    width:50%;
+    height:60%;
+    margin:0 auto;
+    perspective:300px;
+    -webkit-perspective:300px;
+}
+
+#karta {
+    position:relative;
+    width:100%;
+    height:100%;
+    text-align:center;
+    transition:1s;
+    -webkit-transition:1s;
+    transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+}
+
+#pudelko:hover > #karta {
+    transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+}
+
+#przod {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:url('https://scontent-ams2-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10013970_393047397556012_6633055961420459701_n.jpg?oh=2c5d29753f6f361de369dfe10122a46c&oe=561DDB3B') no-repeat;
+    background-size:100%;
+    box-shadow:0 0 4px 8px #FFF inset;
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+}
+
+#tyl {
+    position:absolute;
+    width:100%;
+    height:100%;
+    line-height:60px;
+    color:#FFF;
+    font-size:1em;
+    background-color:rgba(72, 210, 232, 1);
+    box-shadow:0 0 4px 8px #FFF inset;
+    transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+}
+
+
+
+
+/*End of Main Body */
+#stopka {
+    clear:both;
+    background-color: rgba(34, 70, 135, 1);
+    text-align:center;
+    font-size:1.4em;
+    line-height:1.5em;
+}
+
+
+
