@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+{% extends '/Documents/Django/fabric/templates/knitting/basetest.html' %}
+{% load staticfiles %}
+{% block content %}
+
 profil image view
 
     {% for row in object_list %}
 
-      <li><a href={{ row.image.url }} >  <img src={{ row.image.url }} width=30%/> </a></li>
+      <li style="list-style-type:none"><a href={{ row.image.url }} >  <img src={{ row.image.url }} alt="{{ row.image.name }}" width=30%/> </a></li>
     {% endfor %}
 
-</body>
-</html>
+{% endblock content %}

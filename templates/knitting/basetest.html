@@ -4,11 +4,39 @@
 <head lang="en">
     <title>Fabric Action</title>
     <link rel="stylesheet" href="{% static "css/test.css" %}">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
 
 </head>
 <body>
+
+
+<div id="menu">
+
+    <ul id="menuUl">
+          <li id="menuLi1"><a id="menuLiA" href="/about/">O naszej grupie</a></li>
+          <li id="menuLi"><a id="menuLiA" href="/registration/">Rejestracja</a></li>
+          <li id="menuLi"><a id="menuLiA" href="/course1/">Kurs Fabric Action</a></li>
+          <li id="menuLi"><a id="menuLiA" href="/swop/">Upload plikow</a></li>
+    </ul>
+
+</div>
+
+
+<div id="header">
+<a href="/test"><span id="title"><em></br>Fabric Action</em></span></a>
+</div>
+
+<div id="body">
 {% block content %}
+
 {% endblock %}
+</div>
+
+
+<div id="stopka">
+    Fabric action kontakt: 605411577 Politechnika Łódzka
+</div>
+
 </body>
 </html>

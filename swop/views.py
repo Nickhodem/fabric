@@ -46,7 +46,7 @@ def swopengine(request):
 
 def uploaded():
     #odpowiedz na poprawne zarejestrowanie sie
-    return HttpResponse('Thanks for uploading </br> powrot do strony glownej </br> <a href="http://127.0.0.1:8000/">powrot</a>')
+    return HttpResponse('Thanks for uploading </br> powrot do strony glownej </br> <a href="test/">powrot</a>')
 
 
 

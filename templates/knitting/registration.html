@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+{% extends '/Documents/Django/fabric/templates/knitting/basetest.html' %}
+{% load staticfiles %}
 {% block content %}
     <h1>Registration Form</h1>
     <form id="reg_form" method="POST" class="reg-form">{% csrf_token %}
@@ -24,5 +19,3 @@
         <button type="submit" class="save btn btn-default">Save</button>
     </form>
 {% endblock %}
-</body>
-</html>

@@ -24,8 +24,7 @@ SECRET_KEY = '=n+g6hatl)hmt0-*oxrv+%uex1w3lk+!w+utkirf(f_jc#_52m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS=['127.0.0.1:8000','nixus.pythonanywhere.com']
 
 
 # Application definition
@@ -80,6 +79,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'USER':'',
+        'PASSWORD':'',
+        'PORT':''
     }
 }
 
@@ -121,3 +123,6 @@ try:
     from .local_settings import *
 except ImportError:
     pass
+
+
+

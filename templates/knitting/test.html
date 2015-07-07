@@ -1,30 +1,16 @@
 {% extends '/Documents/Django/fabric/templates/knitting/basetest.html' %}
 {% load staticfiles %}
 {% block content %}
-<div id="menu">
-
-    <ul>
-          <li><a href="/about/">O naszej grupie</a></li>
-          <li><a href="/registration/">Rejestracja</a></li>
-          <li><a href="/course1/">Kurs Fabric Action</a></li>
-          <li><a href="/swop/">Upload plikow</a></li>
-    </ul>
-
-</div>
 
 
-<div id="header">
-<span id="title"><em></br>Fabric Action</em> </span>
-</div>
 
-<div id="body">
 
 
     <div id="pudelko">
       <div id="karta">
         <div id="przod"></div>
         <div id="tyl">
-            <div style="text-align: center">
+            <div style="text-align: center; font-size:0.9em; color: black">
                 Co będziemy robić?
                 Inspirując się bogatym dziedzictwem włókienniczym Łodzi,</br>
                 uczestnicy będą eksperymentować z najnowszymi technikami projektowymi</br>
@@ -44,9 +30,7 @@
     <!--<img src="{% static 'images/DigitalKnitting.jpg' %}" alt="Poster" width="40%" height="100%" border = "10"/>
     -->
 
-    </div>
-<div id="stopka">
-    Fabric action kontakt: 605411577 Politechnika Łódzka
-</div>
+
+
 
 {% endblock content %}
