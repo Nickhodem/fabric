@@ -179,3 +179,11 @@ def user_login(request):
         # No context variables to pass to the template system, hence the
         # blank dictionary object...
         return render(request, '/Documents/Django/fabric/templates/knitting/login.html', {})
+
+
+
+
+
+
+def resume(request):
+    return render(request, '/Documents/Django/fabric/templates/resume.html',{})
