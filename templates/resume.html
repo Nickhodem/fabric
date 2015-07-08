@@ -9,11 +9,17 @@
     <link href='http://fonts.googleapis.com/css?family=Audiowide&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <script src="{% static "js/jquery.localscroll.js" %}"></script>
     <script src="{% static "js/jquery.jquery.scrollTo.js" %}"></script>
-    </head>
+    <script type="text/javascript" src="../script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }} /static/jquery-2.1.4.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
 
 <body>
         <script type="text/javascript"> 	$(document).ready(function() { 		$.localScroll(); 	}); </script>
-    <div id="toolbar">      <script type="text/javascript"> 	$(document).ready(function() { 		$.localScroll(); 	}); </script>
+
+    <div class="toolbar">
 
         <p id="nickname"><a id="listmenu" href="#">NIKODEM</a></p>
         <p><a id="listmenu" href="#portfolio">PORTFOLIO</a></p>
@@ -62,6 +68,13 @@
     <div class="rozdzial" id="portfolio">
         <a name="portfolio"></a>
         portfolio
+        <style>.ig-b- { display: inline-block; }
+.ig-b- img { visibility: hidden; }
+.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
+.ig-b-48 { width: 48px; height: 48px; background: url(//badges.instagram.com/static/images/ig-badge-sprite-48.png) no-repeat 0 0; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+.ig-b-48 { background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-48@2x.png); background-size: 60px 178px; } }</style>
+<a href="http://instagram.com/nickhodem?ref=badge" class="ig-b- ig-b-48"><img src="//badges.instagram.com/static/images/ig-badge-48.png" alt="Instagram" /></a>
 
 
     </div>
@@ -78,6 +91,11 @@
     <div class="rozdzial" id="cv">
         <a name="cv"></a>
         CV
+
+
+        <div id="testjq">
+
+        </div>
 
 
     </div>
@@ -98,7 +116,7 @@
 
 
     <!-- Stopka -->
-    <div id="kontakt">
+    <div class="kontakt">
         <a name="kontakt"></a>
 
     <a href="mailto: nikodempankiewicz@gmail.com">Zapraszam do współpracy</a>
