@@ -1,6 +1,7 @@
 from django import forms
-from knitting.models import Student #import modelu do ktorego robimy formularz
+from knitting.models import UserProfile ,Student #import modelu do ktorego robimy formularz
 from django.utils import timezone
+from django.contrib.auth.models import User
 
 class RegisterForm(forms.ModelForm):
     '''
@@ -17,3 +18,14 @@ class RegisterForm(forms.ModelForm):
     class Meta:
         model = Student     #zapis metadanych do ktorego modelu odnosi sie formularz
         fields = ( 'name','surname', 'hashname','email')    #i jakie pola ma zawierac
+
+class UserForm(forms.ModelForm):
+    password= forms.CharField(widget=forms.PasswordInput())
+    class Meta:
+        model = User
+        fields=('username', 'email', 'password')
+
+class UserProfileForm(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ('website', 'picture')

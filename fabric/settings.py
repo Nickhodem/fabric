@@ -85,7 +85,10 @@ DATABASES = {
     }
 }
 
-
+PASSWORD_HASHERS = (
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+)
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
@@ -119,6 +122,7 @@ STATIC_ROOT = 'staticfiles'
 
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 MEDIA_URL='/media/'
+
 try:
     from .local_settings import *
 except ImportError:

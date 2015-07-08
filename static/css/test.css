@@ -87,7 +87,7 @@ body{
 /*Main Body */
 #body{
     width:80%;
-    min-height: 500px;
+    height: 1000px;
     background-color: rgba(42,176,237,1);
     padding-left: 10%;
     padding-right: 10%;

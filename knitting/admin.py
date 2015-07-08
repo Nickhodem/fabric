@@ -10,3 +10,4 @@ class StudentAdmin(admin.ModelAdmin):
 admin.site.register(Course, PageAdmin)
 admin.site.register(Tutor, TutorAdmin)
 admin.site.register(Student, StudentAdmin)
+admin.site.register(UserProfile)
