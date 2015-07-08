@@ -72,6 +72,7 @@ p{
 #portfolio{
     background-color:#333333;
 }
+
 #omnie{
     background-color:#444444;
 }
@@ -115,18 +116,19 @@ p{
 #menu li a{
     display:block;
     width:64px;
-    height:63px;
+    height:64px;
     text-indent:-999999px;
-    background-image:url('../images/sprites1.jpg');
+    background-image:url('../images/duszkiok.png');
     overflow: hidden;
+    background-repeat:no-repeat;
 }
 #menu #facebook a {}
-#menu #youtube a { background-position:-65px 0px; }
-#menu #instagram a { background-position:-129px 0px; }
-#menu #linkedin a { background-position:-193px 0px; }
+#menu #youtube a { background-position:-64px 0px; }
+#menu #instagram a { background-position:-128px 0px; }
+#menu #linkedin a { background-position:-194px 0px; }
 
 #menu #facebook a:hover { background-position:0px -64px; }
-#menu #youtube a:hover { background-position:-65px -64px; }
-#menu #instagram a:hover { background-position:-129px -64px; }
-#menu #linkedin a:hover { background-position:-193px -64px; }
+#menu #youtube a:hover { background-position:-64px -64px; }
+#menu #instagram a:hover { background-position:-128px -64px; }
+#menu #linkedin a:hover { background-position:-194px -64px; }
 
