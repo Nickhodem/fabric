@@ -103,7 +103,6 @@ body{
     width:50%;
     height:50%;
     margin:0 auto;
-    overflow: auto;
     perspective:300px;
     -webkit-perspective:300px;
 }

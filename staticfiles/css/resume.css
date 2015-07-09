@@ -86,9 +86,6 @@ p{
 #hobby{
     background-color:#666666;
 }
-#hobbyinside{
-    text-align:left;
-}
 
 .kontakt{
     width:100%;
@@ -130,10 +127,16 @@ p{
 #menu #youtube a { background-position:-64px 0px; }
 #menu #instagram a { background-position:-128px 0px; }
 #menu #linkedin a { background-position:-194px 0px; }
+
 #menu #facebook a:hover { background-position:0px -64px; }
 #menu #youtube a:hover { background-position:-64px -64px; }
 #menu #instagram a:hover { background-position:-128px -64px; }
 #menu #linkedin a:hover { background-position:-194px -64px; }
+
+.kontakt:hover .rozdzial #hobby{
+    background-color: red;
+}
+
 
 #testjq {
     height: 60px;
@@ -144,66 +147,4 @@ p{
     color: #FFFFFF;
     font-family: Verdana, Arial, Sans-Serif;
     opacity: 0.5;
-}
-
-.kafar{
-
-    height: 4em;
-    width: 100%;
-
-    margin: auto;
-
-    text-align:center;
-
-}
-.kaf:first-child{
-    margin-left:10vw;
-}
-.kaf{
-    height: 15vw;
-    width: 15vw;
-    background-color: #69D2E7;
-    float: left;
-    display:inline;
-    margin-right: 5vw;
-    margin-top: 0em;
-    overflow:auto;
-    text-align:center;
-}
-
-
-
-#hobbyopis{
-    text-align:center;
-}
-
-#hobbyheader{
-    text-align:center;
-    color:white;
-    font-size:1.5em;
-    height:3em;
-    border: 1px solid black;
-}
-
-
-#square {
-    float:left;
-    margin-top:0em;
-    margin-left:-3em;
-    width:25px;
-    height:25px;
-    display:block;
-    text-transform:uppercase;
-    text-decoration:none;
-    color:#f0f0f0;
-    font-weight:bold;
-    background:#000;
-    text-align:center;
-    font-size:22px;
-    line-height:1.1em;
-    box-shadow:0px 0px 2px 0px #666;
-    -moz-box-shadow:0px 0px 2px 0px #666;
-    -webkit-box-shadow:0px 0px 2px 0px #666;
-    text-indent:1px;
-    cursor: pointer;
 }

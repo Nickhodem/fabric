@@ -7,17 +7,15 @@
     <title>resume</title>
     <link rel="stylesheet" href="{% static "css/resume.css" %}">
     <link href='http://fonts.googleapis.com/css?family=Audiowide&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <script src="{% static "js/jquery.localscroll.js" %}"></script>
-    <script src="{% static "js/jquery.jquery.scrollTo.js" %}"></script>
-    <script type="text/javascript" src="../script.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-    <script type="text/javascript" src="{{ STATIC_URL }} /static/jquery-2.1.4.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src='/static/jquery-1.11.3.min.js' type="text/javascript"></script>
+    <script src='/static/js/script.js' type="text/javascript"></script>
+
 </head>
 
 <body>
-        <script type="text/javascript"> 	$(document).ready(function() { 		$.localScroll(); 	}); </script>
+
 
     <div class="toolbar">
 
@@ -53,39 +51,33 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
     <!-- Glowna czesc -->
     <div class="rozdzial" id="portfolio">
         <a name="portfolio"></a>
         portfolio
-        <style>.ig-b- { display: inline-block; }
-.ig-b- img { visibility: hidden; }
-.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
-.ig-b-48 { width: 48px; height: 48px; background: url(//badges.instagram.com/static/images/ig-badge-sprite-48.png) no-repeat 0 0; }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-.ig-b-48 { background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-48@2x.png); background-size: 60px 178px; } }</style>
-<a href="http://instagram.com/nickhodem?ref=badge" class="ig-b- ig-b-48"><img src="//badges.instagram.com/static/images/ig-badge-48.png" alt="Instagram" /></a>
+            <div id="stocznia">
+                <div id="port">
+                    Chcesz dowiedziec sie o mnie wiecej kliknij:
+                    <p id="opis"></p>
+                    <button id="przycisk">poznaj mnie</button>
 
+                </div>
+                <div id="port2">
+
+                </div>
+            </div>
 
     </div>
 
 
     <div class="rozdzial" id="omnie">
         <a name="omnie"></a>
-        O mnie
-
 
     </div>
+
+
+
+
 
 
     <div class="rozdzial" id="cv">
@@ -93,9 +85,7 @@
         CV
 
 
-        <div id="testjq">
 
-        </div>
 
 
     </div>
@@ -104,6 +94,73 @@
         <a name="hobby"></a>
             <div id="hobbyinside">
                 HOBBY
+
+                <div id="hobbyheader"><p>Narciarstwo</p> <p>Rower</p> <p>Góry</p> <p>HidePark</p> <p>All</p> </br></div>
+
+                <div class="kafar">
+                    <div class=kaf id="kaf1">
+                        <h3>Narciarstwo</h3>
+                            <p id="hobbyopis1">Sporty zimowe dodają mi o tej zimnej porze roku niesamowitych doznań.
+                                Jeżdżąc na nartach mogę poczuć wymarzoną wolność, a pęd prędkości i szus śniegu buzuje mój testosteron w żyłach.
+                                Jazdę na nartach rozpocząłem już w wieku 6 lat, podczas zimowisk na które co roku jeździłem z rodzicami i ich przyjaciółmi.
+                                Podczas wyjazdów tworzyliśmy doskonałą grupę przyjaciół, a na stokach rywalizowaliśmy w jeździe.
+                                Wyjazdy te będe wspominał z miłym odczuciem, że życie może być piękne.
+                                Natomiast jazdę na snowboardzie rozpocząłem niedawno, dzięki przyjaciołom ze studiów.
+                                Doskonalenie jazdy na desce jest niekończącą się przygodą, a towarzysząca przy tym adrenalina potrafi uzależnić.
+                                Dodatkowo wszystkie widoki wokół napawają mnie niezwykłym poczuciem piękna tego świata. </p>
+
+
+                    </div>
+
+                    <div class=kaf id="kaf2">
+
+
+                            <h3>Rower</h3>
+                            <p id="hobbyopis2">Rower moim zdaniem to najlepszy sposób na poruszanie się i podróżowanie. Jest niesamowicie ciężko wymienić wszyscie jego zalety.
+                                Jeżdżąc na rowerze w końcu mogę sobię powiedzieć, że czuję, że żyję. Pot ścieka po twarzy, w żyłach buzuje krew, ale w końcu jestem z siebie dumnu.
+                                Jadąc często przypominam sobie opisy z książek o pierwszysch odkrywcach i konkwistadorach, którzy nie wiedzieli dokąd zaprowadzi ich ścieżka, którą nikt wczesniej jeszcze nie podążał.
+                                Jadąc czuję się jak pierwotny człowiek, nie więdzący czego ma się spodziewać za najbliższym zakrętem.
+                                Znowy muszę podziękować rodzicom, którzy na moje usilne prośby ugięli się i kupili mi wyczesany rower.
+                                Z nim wiem, że mogę wszedzie dojechać. Czy to na bliskich szlakach województwa Łódzkiego, Małopolskiego czy wzdłuź Bałtyku.
+                                Były to wspaniałe wycieczki i podróże. Planuję w jak najszybszej przyszłości pojechać na wymarzoną
+                                podróż rowerem po Norwegii i pzejechać tam drogę trolli i drogę atlantycką</p>
+
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class=kaf id="kaf3">
+                        <h3>Góry</h3>
+                            <p id="hobbyopis3">Bo w górach jest wszystko co kocham. Szczególnie w Polskich górach i szczególnie w Tatrach. Jest tam zarazem dużo spokoju jak i przyjaznych ludzi.
+                                Piękna natura jak i niebiezpieczna. Jeśli się chce można tam wypocząć, jednak w większości przypadków wypoczywająć tam
+                                nieżle się umęczymy, przez co (o ironio!), będziemy jeszcze bardziej wypoczęci!. W górach mógłbym żyć na codzień, mógłbym wędrować szlakami przez całe życie. I zapewniam
+                                -nigdy by mi się to nie znudziło, ani nie znużyło. Staram się wyjeżdżać w góry conajmniej raz w roku.
+                                Mocniej się jeszcze staram,aby być tam jak najdłużej i kontynuawać tradycję rozpoczętą jeszcze w przedszkolu.
+                                </p>
+
+
+
+
+                    </div>
+
+                    <div class=kaf id="kaf4">
+                        <h3>HidePark</h3>
+                        <p id="hobbyopis4">
+                            Czyli wszystko inne:
+
+                        </p>
+
+
+                    </div>
+                    <div id="square">&#10006;</div>
+
+
+
             </div>
 
 
@@ -115,14 +172,14 @@
 
 
 
-    <!-- Stopka -->
+    <!-- Stopka
     <div class="kontakt">
         <a name="kontakt"></a>
 
     <a href="mailto: nikodempankiewicz@gmail.com">Zapraszam do współpracy</a>
 
     </div>
-
+-->
 
 
 
@@ -136,10 +193,10 @@
 
 <!--
 TODO
-Duszki do fb, instagrama, fabric action i wszedzie indziej
+
 z górnego menu przechodzenie plynne do niższych paneli !! localscroll.js
 ze tych glownych 5 elementow zrobic taka odwracaną kostkę
 zrobic cos zeby sie skalowalo a nie rozjezdzalo
-
+Co sie stalo ze stopka?
 
 -->

@@ -1,0 +1,37 @@
+body{
+    background-color:rgba(180, 224, 225, 1);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    writing-mode: lr-tb;
+
+
+}
+.page-header {
+    background-color:
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+div{
+    /*width: 50%;
+    height: 50%;
+    background-color: #FC1AEE;
+    */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+
+}
+#welcome{
+    background-color: white;
+}
+#courses{
+    background-color: rgba(42, 191, 212, 1);
+    }
+#tutors{
+    background-color: rgba(34, 70, 135, 1);
+    }
+
