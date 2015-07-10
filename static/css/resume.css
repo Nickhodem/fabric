@@ -6,6 +6,9 @@ body{
 a{
     text-decoration:none;
 }
+a:visited{
+    color:cyan;
+}
 /* gorny pasek */
 .toolbar{
     width:100%;
@@ -78,18 +81,70 @@ p{
     background-color:#444444;
 }
 
-
+/* CV start*/
 #cv{
     background-color:#555555;
+    font-align: center;
 }
 
-#hobby{
-    background-color:#666666;
-}
-#hobbyinside{
-    text-align:left;
+#cvheader{
+    height:3em;
+    border:1px solid black;
+    color: white;
+    font-weight: 20px;
+    font-size: 4em;
+    text-align: center;
 }
 
+.cvbody{
+    width:80%;
+    min-height: 50vh;
+    background-color:lightblue;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.cvbod:first-child{
+    height:100%;
+    width:60%;
+    background-color:yellow;
+    margin-right:10%;
+}
+.cvbod:nth-child(3){
+    width:60%;
+    background-color:orange;
+    margin-right:10%;
+}
+.cvbod{
+
+    min-width:20%;
+    min-height:20vh;
+    background-color:red;
+    display:inline-block;
+    line-height: 1cm;
+}
+
+#skala{
+    width:100%;
+    height:2em;
+    border:1px solid black;
+    background-color:yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CV end*/
 .kontakt{
     width:100%;
     height: 5em;
@@ -146,13 +201,24 @@ p{
     opacity: 0.5;
 }
 
+
+
+
+/*hobby  start*/
+#hobby{
+    background-color:#666666;
+    height:50vh;
+}
+#hobbyinside{
+    text-align:left;
+}
+
+
 .kafar{
 
     height: 4em;
     width: 100%;
-
     margin: auto;
-
     text-align:center;
 
 }
@@ -181,11 +247,12 @@ p{
     text-align:center;
     color:white;
     font-size:1.5em;
-    height:3em;
+    height:2.5em;
     border: 1px solid black;
+    overflow:hidden;
 }
 
-
+/*zamykacz okienek*/
 #square {
     float:left;
     margin-top:0em;
@@ -207,3 +274,4 @@ p{
     text-indent:1px;
     cursor: pointer;
 }
+/*hobby  end*/
