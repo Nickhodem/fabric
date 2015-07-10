@@ -175,4 +175,43 @@ $(document).ready(function(){
 
 
 
+/*CV animation */
+
+$(document).ready(function(){
+    $(".cvbody").click(function(){
+        $("#skalaArc").animate({width: "70%"}, "slow");;
+        $("#skalaMicro").animate({width: "80%"}, "slow");;
+        $("#skalaFaro").animate({width: "60%"}, "slow");;
+        $("#skalaQgis").animate({width: "50%"}, "slow");;
+        $("#skalaCad").animate({width: "70%"}, "slow");;
+        $("#skalaAgis").animate({width: "40%"}, "slow");;
+
+
+    });
+});
+/*
+$(document).ready(function(){
+    $(".cvbody").click(function(){
+        $("#cecha2").animate({width: '19%'}, "slow");
+        $("#cecha1").animate({width: '80%'}, "slow");
+        $("#cecha1").animate({width: '81%'}, "fast");
+
+
+    });
+});
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
