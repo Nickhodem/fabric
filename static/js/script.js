@@ -279,8 +279,14 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-    $( "#tog" ).click(function() {
-    $( "#toglek" ).toggle( "explode", 1000 );
+    $( "#tog, #toglek" ).click(function() {
+    $("#toglek").toggle( "blind", 1000 );
+        });
+  });
+
+$(document).ready(function() {
+    $( "#tog2, #toglek2" ).click(function() {
+    $("#toglek2").toggle( "blind", 1000 );
         });
   });
 
@@ -297,10 +303,33 @@ $( "#tog" ).click(function () {
 });
   */
 
+$(document).ready(function() {
+    $( ".togi" ).hide();
+});
 
 
 $(function() {
     $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
     $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
 });
+
+
+
+/* POP UP*/
+
+$(function() {
+    $('.link').click(function(e) {
+        //jeżeli popup nie jest widoczny to go pokaż
+        if (!$('.popup:visible').length) {
+            $('.popup').fadeIn();
+        }
+        e.preventDefault();
+        return false;
+    });
+
+    //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
+    $('.popup .close, .popup .bg').click(function() {
+        $(this).parents('.popup').fadeOut();
+    });
+})
 
