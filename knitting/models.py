@@ -47,3 +47,11 @@ class UserProfile(models.Model):
     # Override the __unicode__() method to return out something meaningful!
     def __unicode__(self):
         return self.user.username
+
+class Kontakt(models.Model):
+    name=models.CharField(max_length=50, blank=False)
+    email=models.EmailField(blank=False)
+    message=models.TextField()
+    date=models.DateTimeField(default=timezone.now)
+    def __unicode__(self):
+        return self.name

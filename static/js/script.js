@@ -31,8 +31,8 @@ $(document).ready(function() {
 
 
 $(document).ready(function(){
-    $("#kaf1").click(function(){
-        var div = $(this);
+    $("#kaf1, #narty").click(function(){
+        var div = $("#kaf1");
         $("#kaf2, #kaf3, #kaf4").hide();
         /*div.animate({right: '-10vw'}, "fast");*/
         div.animate({width: '80vw'}, "slow");
@@ -78,8 +78,8 @@ $(document).ready(function() {
 
 
 $(document).ready(function(){
-    $("#kaf2").click(function(){
-        var div = $(this);
+    $("#kaf2, #rower").click(function(){
+        var div = $("#kaf2");
         $("#kaf1, #kaf3, #kaf4").hide();
         div.css("margin-left","10vw");
         div.animate({width: '80vw'}, "slow");
@@ -117,8 +117,8 @@ $(document).ready(function() {
 
 
 $(document).ready(function(){
-    $("#kaf3").click(function(){
-        var div = $(this);
+    $("#kaf3, #gory").click(function(){
+        var div = $("#kaf3");
         $("#kaf1, #kaf2, #kaf4").hide();
         div.css("margin-left","10vw");
         div.animate({width: '80vw'}, "slow");
@@ -160,8 +160,8 @@ $(document).ready(function() {
 
 
 $(document).ready(function(){
-    $("#kaf4").click(function(){
-        var div = $(this);
+    $("#kaf4, #hydepark").click(function(){
+        var div = $("#kaf4");
         $("#kaf1, #kaf2, #kaf3").hide();
         div.css("margin-left","10vw");
         div.animate({width: '80vw'}, "slow");
@@ -175,20 +175,33 @@ $(document).ready(function(){
 
 
 
+
+
+
+
+
+
+
+
+
 /*CV animation */
-
-$(document).ready(function(){
-    $(".cvbody").click(function(){
-        $("#skalaArc").animate({width: "70%"}, "slow");;
-        $("#skalaMicro").animate({width: "80%"}, "slow");;
-        $("#skalaFaro").animate({width: "60%"}, "slow");;
-        $("#skalaQgis").animate({width: "50%"}, "slow");;
-        $("#skalaCad").animate({width: "70%"}, "slow");;
-        $("#skalaAgis").animate({width: "40%"}, "slow");;
+/*paski umiejetnosci skill */
 
 
-    });
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 $(document).ready(function(){
     $(".cvbody").click(function(){
@@ -206,12 +219,88 @@ $(document).ready(function(){
 
 
 
+$(document).ready(function() {
+    $( ".progressbar" ).progressbar({
+      value: 1
+    });
+  });
+
+/*
+$(document).ready(function() {
+    $( ".cvbod" ).click(function() {
+    $( "#Arc" ).progressbar({value: 70});
+    $( "#Micro" ).progressbar({value: 80});
+    $( "#Faro" ).progressbar({value: 60});
+    $( "#Qgis" ).progressbar({value: 50});
+    $( "#Cad" ).progressbar({value: 70});
+    $( "#Agi" ).progressbar({value: 40});
+
+    });
+  });
+*/
+$(document).ready(function() {
+$( ".cvbod" ).click(function() {
+$("#Arc .ui-progressbar-value").animate({width: "70%"}, {queue: false});
+$("#Micro .ui-progressbar-value").animate({width: "80%"}, {queue: false});
+$("#Faro .ui-progressbar-value").animate({width: "60%"}, {queue: false});
+$("#Qgis .ui-progressbar-value").animate({width: "50%"}, {queue: false});
+$("#Cad .ui-progressbar-value").animate({width: "70%"}, {queue: false});
+$("#Agi .ui-progressbar-value").animate({width: "40%"}, {queue: false});
+    });
+ });
+
+
+$(document).ready(function() {
+$(".progressbar").css({ 'background': '#444444' });
+});
 
 
 
+$(document).ready(function() {
+    function latlong() {
+      return new google.maps.LatLng( $("#lat").val(), $("#lng").val() );
+    }
+    function position() {
+      map.setCenter( latlong() );
+    }
+    $( "#lat, #lng" ).spinner({
+      step: .001,
+      change: position,
+      stop: position
+    });
+
+    var map = new google.maps.Map( $("#map")[0], {
+      zoom: 19,
+      center: latlong(),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+  });
 
 
 
+$(document).ready(function() {
+    $( "#tog" ).click(function() {
+    $( "#toglek" ).toggle( "explode", 1000 );
+        });
+  });
 
 
+/*
+$(document).ready(function() {
+$( "#tog" ).click(function () {
+  if ( $( "#toglek" ).is( ":hidden" ) ) {
+    $( "#toglek" ).slideDown( "slow" );
+  } else {
+    $( "#toglek" ).hide();
+  }
+});
+});
+  */
+
+
+
+$(function() {
+    $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+    $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+});
 

@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from knitting.models import Student, Course, Tutor
-from knitting.forms import RegisterForm
+from knitting.forms import RegisterForm, ClientKontakt
 from django.utils import timezone
 from django.shortcuts import render_to_response
 from django.template import RequestContext
@@ -46,20 +46,6 @@ def registered(request):
 def notregistered(request):
     #odpowiedz gdy wystapil blad w rejestracji:
     return HttpResponse('Registration collapsed please return to registration form <a href="">rejestracja</a>')
-
-
-def register_view(request):
-    #glowny watek rejestracji
-    if request.method == 'POST':
-        form=RegisterForm(request.POST)
-        if form.is_valid():
-            form.save(commit=True)
-            return registered(request)
-        else:
-            return notregistered(request)
-    else:
-        form=RegisterForm()
-    return  render(request, '/Documents/Django/fabric/templates/knitting/registration.html', {'form':form})
 
 
 
@@ -184,6 +170,39 @@ def user_login(request):
 
 
 
-
+"""
 def resume(request):
     return render(request, '/Documents/Django/fabric/templates/resume.html',{})
+
+"""
+def register_view(request):
+    #glowny watek rejestracji
+    if request.method == 'POST':
+        form=RegisterForm(request.POST)
+        if form.is_valid():
+            form.save(commit=True)
+            return registered(request)
+        else:
+            return notregistered(request)
+    else:
+        form=RegisterForm()
+    return  render(request, '/Documents/Django/fabric/templates/knitting/registration.html', {'form':form})
+
+def notcontact(request):
+    #odpowiedz gdy wystapil blad w rejestracji:
+    return HttpResponse('Contact collapsed please return to main page <a href="/resume/">powrot</a>')
+
+
+
+def resume(request):
+    #glowny watek rejestracji
+    if request.method == 'POST':
+        form=ClientKontakt(request.POST)
+        if form.is_valid():
+            form.save(commit=True)
+            return render(request, '/Documents/Django/fabric/templates/resume.html',{'form':form})
+        else:
+            return notcontact(request)
+    else:
+        form=ClientKontakt()
+    return render(request, '/Documents/Django/fabric/templates/resume.html',{'form':form})

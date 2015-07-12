@@ -2,6 +2,8 @@ body{
     margin: 0px;
     font-family:Audiowide;
     background-color: #444444;
+    color: white;
+    text-shadow:black 0px 0px 5px;
 }
 a{
     text-decoration:none;
@@ -16,12 +18,14 @@ a:visited{
     background-color:#C0C0C0;
     position:fixed;
     overflow: hidden;
+    text-shadow:none;
 }
 
 p{
     display:inline;
-    margin-right: 8vw;
+    margin-right: 5vw;
     vertical-align:-2vh;
+    cursor:pointer;
 }
 #nickname{
     color: #444444;
@@ -75,14 +79,15 @@ p{
 
 #portfolio{
     background-color:#333333;
+    min-height: 50vh;
 }
 
-#omnie{
+#doswiadczenie{
     background-color:#444444;
 }
 
 /* CV start*/
-#cv{
+#wyksztalcenie{
     background-color:#555555;
     font-align: center;
     padding-bottom:1em;
@@ -103,6 +108,7 @@ p{
     /*background-color:lightblue;*/
     margin-left:5%;
     margin-right:5%;
+
 }
 
 .cvbod:first-child{
@@ -116,11 +122,11 @@ p{
     /*background-color:orange;*/
     margin-right:10%;
 }
+
 .cvbod{
 
     min-width:28%;
     min-height:20vh;
-    /*background-color:red;*/
     display:inline-block;
     line-height: 1cm;
 }
@@ -167,8 +173,8 @@ p{
 /* CV end*/
 .kontakt{
     width:100%;
-    height: 5em;
-    background-color:lightblue;
+    min-height: 5em;
+    background-color: #99FF99;
     text-align:center;
 }
 
@@ -227,7 +233,7 @@ p{
 /*hobby  start*/
 #hobby{
     background-color:#666666;
-    height:50vh;
+    min-height:100vh;
     padding-top:2.5em;
 }
 #hobbyinside{
@@ -249,13 +255,14 @@ p{
 .kaf{
     height: 15vw;
     width: 15vw;
-    background-color: #99FF99;
+    background-color: #9fda58;
     float: left;
     display:inline;
     margin-right: 5vw;
     margin-top: 0em;
     overflow:auto;
     text-align:center;
+    cursor: pointer;
 }
 
 
@@ -296,3 +303,88 @@ p{
     cursor: pointer;
 }
 /*hobby  end*/
+h1, h2, strong{
+    text-shadow:black 5px 5px 5px;
+}
+
+
+
+#map {
+
+    width:100%;
+    height:300px;
+}
+
+
+
+
+
+
+/*Doswiadczenie*/
+#toglek{
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    border: 1px solid #000;
+}
+
+#tog{
+    cursor:pointer;
+
+}
+
+.ui-widget-header {
+    background: #cedc98;
+    border: 1px solid #DDDDDD;
+    color: #333333;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/*Portfolio*/
+#tabs{
+    background-color: #333333;
+}
+
+.ui-tabs-vertical {
+    width: 99%;
+    margin-right:15em;
+}
+
+.ui-tabs-vertical .ui-tabs-nav {
+    padding: .2em .1em .2em .2em;
+    float: left;
+    width: 12em;
+}
+.ui-tabs-vertical .ui-tabs-nav li {
+    clear: left;
+    width: 100%;
+    border-bottom-width: 1px !important;
+    border-right-width: 0 !important;
+    margin: 0 -1px .2em 0;
+
+}
+
+.ui-tabs-vertical .ui-tabs-nav li a {
+    display:block;
+    }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+    padding-bottom: 0;
+    padding-right: .1em;
+    border-right-width: 1px;
+    }
+.ui-tabs-vertical .ui-tabs-panel {
+    padding: 1em;
+    float: right;
+    width: 79%;
+    }
+
+#tabs{
+    font-family:Audiowide;
+}
+
+/*End of portfolio */
