@@ -11,6 +11,9 @@ a{
 a:visited{
     color:cyan;
 }
+
+
+
 /* gorny pasek */
 .toolbar{
     width:100%;
@@ -198,6 +201,7 @@ label {
     list-style-type:none;
     margin: auto;
     padding:0;
+
     height:64px;
     width:380px;
     overflow: hidden;

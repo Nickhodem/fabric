@@ -236,7 +236,7 @@ $(document).ready(function() {
   });
 */
 $(document).ready(function() {
-$( "#wyksztalcenie" ).mouseenter(function() {
+$( ".cvbod" ).mouseenter(function() {
 $("#Arc .ui-progressbar-value").animate({width: "70%"}, {queue: false});
 $("#Micro .ui-progressbar-value").animate({width: "80%"}, {queue: false});
 $("#Faro .ui-progressbar-value").animate({width: "60%"}, {queue: false});
@@ -356,5 +356,3 @@ $(function() {
       }
     });
   });
-
-$(document).tooltip({effect: "blind", duration: 1000, tooltipClass: 'tooltipclasss'});
