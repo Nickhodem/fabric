@@ -13,8 +13,6 @@ a:visited{
     color:cyan;
 }
 
-
-
 /* gorny pasek */
 .toolbar{
     width:100%;
@@ -155,25 +153,6 @@ p{
     overflow:hidden;
 
 }
-/* Test tak aby zrobic ramke w ramke jedna cecha sie animuje a pusta zostaje zmniejszana
-#cecha1{
-    width:1%;
-    height: 2em;
-    background-color: orange;
-    float:left;
-}
-#cecha2{
-    width:99%;
-    height: 2em;
-    background-color: blue;
-    float:right;
-}
-*/
-
-
-
-
-
 
 /* CV end*/
 .kontakt{
@@ -247,8 +226,6 @@ label {
 }
 
 
-
-
 /*hobby  start*/
 #hobby{
     background-color:#666666;
@@ -282,8 +259,8 @@ label {
     overflow:auto;
     text-align:center;
     cursor: pointer;
-}
 
+}
 
 
 #hobbyopis{
@@ -299,27 +276,43 @@ label {
     overflow:hidden;
 }
 
-/*zamykacz okienek*/
-#square {
-    float:left;
-    margin-top:0em;
-    margin-left:-3em;
-    width:25px;
-    height:25px;
-    display:block;
-    text-transform:uppercase;
-    text-decoration:none;
-    color:#f0f0f0;
-    font-weight:bold;
-    background:#000;
+.kafopen{
+    width:80vw;
+    height: 700%;
+    background-size:80vw;
+    margin-left: 10vw;
+}
+
+
+.newclass{
+    width: 80%;
+    height:500px;
+    border: 5px solid black;
+    background-color: red;
+    margin:auto;
     text-align:center;
-    font-size:22px;
-    line-height:1.1em;
-    box-shadow:0px 0px 2px 0px #666;
-    -moz-box-shadow:0px 0px 2px 0px #666;
-    -webkit-box-shadow:0px 0px 2px 0px #666;
-    text-indent:1px;
-    cursor: pointer;
+}
+
+.notclass{
+    width:0px;
+    height:0px;
+}
+
+
+.kaf1{
+    background-image:url('https://lh3.googleusercontent.com/-ljSpSKrgJK4/URjxaynkJzI/AAAAAAAAF28/0Qe68qWNkRA/s640-Ic42/06022013098.jpg');
+}
+
+.kaf2{
+    background-image:url('http://www.visitnorway.com/ImageVaultFiles/id_20367/cf_1174/the-atlantic-road-national-tourist-route-norway_74.JPG');
+}
+
+.kaf3{
+    background-image:url('https://scontent-ams2-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/923179_4889005586940_87398359_n.jpg?oh=78bcce097dc059724e7dbe7418bd1104&oe=5624BC39');
+}
+
+.kaf4{
+    background-image:url('https://lh3.googleusercontent.com/-LysLjIsAW7c/S9HoGXheDOI/AAAAAAAAEGE/cXWcwmqGGU8/s640-Ic42/DSC08963.JPG');
 }
 /*hobby  end*/
 h1, h2, strong{
@@ -335,29 +328,6 @@ h1, h2, strong{
 }
 
 
-
-
-
-
-/*Doswiadczenie*/
-#toglek{
-    width: 100%;
-    height: 100%;
-    background: none;
-    /*border: 1px solid #000;*/
-    margin:auto;
-}
-
-#tog{
-    cursor:ns-resize;
-    text-decoration: underline;
-
-}
-#tog2{
-    cursor:ns-resize;
-    text-decoration: underline;
-
-}
 
 
 
