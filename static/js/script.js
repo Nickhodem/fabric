@@ -208,8 +208,6 @@ $(document).ready(function(){
         $("#cecha2").animate({width: '19%'}, "slow");
         $("#cecha1").animate({width: '80%'}, "slow");
         $("#cecha1").animate({width: '81%'}, "fast");
-
-
     });
 });
 */
@@ -234,7 +232,6 @@ $(document).ready(function() {
     $( "#Qgis" ).progressbar({value: 50});
     $( "#Cad" ).progressbar({value: 70});
     $( "#Agi" ).progressbar({value: 40});
-
     });
   });
 */
@@ -332,4 +329,29 @@ $(function() {
         $(this).parents('.popup').fadeOut();
     });
 })
+
+
+
+
+$(function() {
+    $( document ).tooltip({
+      items: "img, [data-geo], [title]",
+      content: function() {
+        var element = $( this );
+        if ( element.is( "[data-geo]" ) ) {
+          var text = element.text();
+          return "<img class='map' alt='" + text +
+            "' src='http://maps.google.com/maps/api/staticmap?" +
+            "zoom=11&size=350x350&maptype=terrain&sensor=false&center=" +
+            text + "'>";
+        }
+        if ( element.is( "[title]" ) ) {
+          return element.attr( "title" );
+        }
+        if ( element.is( "img" ) ) {
+          return element.attr( "alt" );
+        }
+      }
+    });
+  });
 
