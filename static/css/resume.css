@@ -8,6 +8,7 @@ body{
 a{
     text-decoration:none;
 }
+
 a:visited{
     color:cyan;
 }
@@ -59,7 +60,7 @@ p{
     width: 100%;
     min-height: 100vh; /* 100 % wysokosci okna przegladarki */
     background-image: url("../images/tlo1.JPG");
-    background-size: 100% 100vh;
+    background-size: 120% 120vh;
     overflow: hidden;
     }
 
@@ -101,7 +102,6 @@ p{
 
 #cvheader{
     height:3em;
-
     color: white;
     font-weight: 20px;
     font-size: 4em;
@@ -115,6 +115,7 @@ p{
     margin-left:5%;
     margin-right:5%;
     cursor: pointer;
+
 
 }
 
