@@ -236,7 +236,7 @@ $(document).ready(function() {
   });
 */
 $(document).ready(function() {
-$( ".cvbod" ).click(function() {
+$( "#wyksztalcenie" ).mouseenter(function() {
 $("#Arc .ui-progressbar-value").animate({width: "70%"}, {queue: false});
 $("#Micro .ui-progressbar-value").animate({width: "80%"}, {queue: false});
 $("#Faro .ui-progressbar-value").animate({width: "60%"}, {queue: false});
@@ -335,9 +335,11 @@ $(function() {
 
 $(function() {
     $( document ).tooltip({
+
       items: "img, [data-geo], [title]",
       content: function() {
         var element = $( this );
+
         if ( element.is( "[data-geo]" ) ) {
           var text = element.text();
           return "<img class='map' alt='" + text +
@@ -355,3 +357,4 @@ $(function() {
     });
   });
 
+$(document).tooltip({effect: "blind", duration: 1000, tooltipClass: 'tooltipclasss'});

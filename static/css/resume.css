@@ -111,6 +111,7 @@ p{
     /*background-color:lightblue;*/
     margin-left:5%;
     margin-right:5%;
+    cursor: pointer;
 
 }
 
@@ -501,4 +502,8 @@ h1, h2, strong{
 }
 .ui-tooltip {
     max-width: 350px;
+}
+
+.tooltipclasss{
+    font-family:Audiowide;
 }
