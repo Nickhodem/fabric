@@ -24,7 +24,7 @@
 
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
-    <link rel="stylesheet" href="{% static "css/resume.css" %}">
+    <link rel="stylesheet" href="{% static "css/resumefp.css" %}">
     <link rel="stylesheet" href="{% static "jquery-ui.css" %}">
 
 	<!--[if IE]>
@@ -44,7 +44,7 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage'],
+				anchors: ['Nikodem', 'Portfolio', 'Wyksztalcenie', 'Hobby', 'Kontakt'],
 				menu: '#menu',
 				afterLoad: function(anchorLink, index){
 
@@ -94,36 +94,155 @@
 
 
 <ul id="menu">
-	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-	<li data-menuanchor="4thPage"><a href="#4thPage">Fourth slide</a></li>
-	<li data-menuanchor="5thPage"><a href="#5thPage">Fifth slide</a></li>
+	<li data-menuanchor="Nikodem" style="margin-right:1vw"><a href="#Nikodem">Nikodem</a></li>
+	<li data-menuanchor="Portfolio"><a href="#Portfolio">Portfolio</a></li>
+	<li data-menuanchor="Wyksztalcenie"><a href="#Wyksztalcenie">Wykształcenie</a></li>
+	<li data-menuanchor="Hobby"><a href="#Hobby">Hobby</a></li>
+	<li data-menuanchor="Kontakt"><a href="#Kontakt">Kontakt</a></li>
 
 </ul>
 
 <div id="fullpage">
 	<div class="section " id="section0">
-		<h1>fullPage.js</h1>
-		<p>Configure the scrolling speed!</p>
-		<img src="imgs/fullPage.png" alt="fullPage" />
+    <div id="header">
+        <div id="title">
+           </br>
+            </br>
+            </br>
+            </br>
+            <h1 style="font-size: 2.3em; color:white">Nikodem Pankiewicz</br></h1>
+            </br>
+            </br>
+            </br>
+
+        </div>
+
+        <div>
+          <ul id="menuu">
+            <li id="facebook"><a href="https://www.facebook.com/Nickhodem" target="_blank">Facebook</a></li>
+            <li id="youtube"><a href="https://www.youtube.com/channel/UCSjFD4GMyuEPHYuLKDLGcrg" target="_blank">YouTube</a></li>
+            <li id="instagram"><a href="https://instagram.com/nickhodem/" target="_blank">Instagram</a></li>
+            <li id="linkedin"><a href="https://pl.linkedin.com/pub/nikodem-pankiewicz/b2/535/1a6" target="_blank">linkedin</a></li>
+        </ul>
+        </div>
+
+    </div>
 	</div>
+
 	<div class="section" id="section1">
 	    <div class="slide">
-			<div class="intro">
-				<img src="imgs/1.png" alt="Cool" />
-				<h1>Slow scrolling speed</h1>
-				<p>In case we want to make a site for old people, for example :)</p>
-			</div>
+            <div id="slajd">
+
+            <h2>Kivy</h2>
+            Dzięki Frameworkowi <a href="http://kivy.org" style="text-decoration: underline;"> <em>Kivy</em> </a> można, za pośrednictwem języka Python, szybko stworzyć aplikację desktopowe na różne platformy takie jak
+            Windows, OS X, Linux, Android, iOS. Można na podstawie tego samego kodu skompilować aplikację na wyżej wymienione platformy. Wsparcie społeczności jest naprawdę duże,
+                a dokumentacja kompletna i w pełni wystarczająca.</br>
+            Framework naprawdę spełnia oczekiwania i wciąż jest rozwijany. Przy jego użyciu stworzyłem kilka fajnych appek na Androida.
+            Między innymi był to <span id="tog">Kalkulator Geodezyjny</span>, gra <span id="tog2">Geodeta</span>, czy Brain Damager, grę dzięki której, po jednej rundzie zrozumiecie jak słaby jest wasz mózg!</br>
+                </br>
+                </br>
+                Zdobyte umiejętności:
+                </br>
+                </br>
+                <div class="SkillIcon">
+                <a href="http://kivy.org" target="_blank"><img src="http://kivy.org/logos/kivy-logo-black-64.png" alt="Kivy" height="60" width="60"/></a>
+                <a href="https://github.com/Nickhodem" target="_blank"><img src="../static/images/githubLogo.png" alt="GitHub" height="60"/></a>
+                <a href="http://www.ubuntu.com/" target="_blank"><img src="../static/images/Ubuntu.PNG" alt="Ubuntu" height="60" /></a>
+                <a href="http://www.android.com/" target="_blank"><img src="../static/images/Android.PNG" alt="Android" height="60"/></a>
+                <a href="http://www.python.com/" target="_blank"><img src="../static/images/Python.png" alt="Python 2.7" height="60"/></a>
+                </div>
+
+
+            </div>
 		</div>
-	    <div class="slide">
-			<div class="intro">
-				<img src="imgs/2.png" alt="Compatible" />
-				<h1>Landscape too</h1>
-				<p>Also applied to landscape slides. Great uh?</p>
-			</div>
+        <div class="slide">
+            <div id="slajd">
+
+            <h2>Django</h2>
+            Jest to wysokopoziomowy opensource'owy framework przeznaczony do tworzenia aplikacji internetowych, napisany w Pythonie w którym mam przyjemność pracować. Django współpracuje z Apache poprzez WSGI i mod python. Dzięki temu oraz dzięki uprzejmości PythonAnyWhere mogłem udostępnić tę stronę
+            społeczności internetowej.</br>Spod moich palców i klawiatury wyszła platforma grupy <a href="http://fabric.pythonanywhere.com/" style="text-decoration: underline" target="_blank">Fabric Action</a>, która to powstała z potrzeby szerzenia wśród projektantów i architektów najnowocześniejszych myśli i technologi projektowych jakimi są narzędzia generatywne.
+                W portalu znajdziemy najpotrzebniejsze funkcje służące funkcjonalności grupy, taką jak rejestracja na kursy,
+            automatycznie generowane wykazy przyszłych kursów i obecnych tutorów oraz aplikację do wymiany plików między kursantami, a szkoleniowcami</br>
+            Dodatkowo ostatnio wystartował stworzony przeze mnie blog o tematyce skaningowej i inżynierii odwrotnej.
+            Django jest moją ostatnią pasją i wiem, że w przyszłości dzięki niemu stworzę wiele wspaniałych aplikacji.</br>
+
+                </br>
+                Zdobyte umiejętności:
+                </br>
+
+                <div class="SkillIcon">
+                <a href="https://www.djangoproject.com/" target="_blank"><img src="../static/images/Django.png" alt="Django" height="60" width="60"/></a>
+                    <a href="http://www.html5rocks.com/en/" target="_blank"><img src="../static/images/HTML5.png" alt="HTML 5" height="60"/></a>
+                    <a href="https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w" target="_blank"><img src="../static/images/CSS3.png" alt="CSS 3" height="60"/></a>
+                    <a href="https://jquery.com/" target="_blank"><img src="../static/images/jq.png" alt="jQuery" height="60"/></a>
+                    <a href="https://github.com/Nickhodem" target="_blank"><img src="../static/images/githubLogo.png" alt="GitHub" height="60"/></a>
+                    <a href="https://www.debian.org" target="_blank"><img src="../static/images/Debian.png" alt="Debian Jessie" height="60" /></a>
+                    <a href="http://www.python.com/" target="_blank"><img src="../static/images/Python.png" alt="Python 2.7" height="60"/></a>
+                </div>
+
+
+            </div>
 		</div>
+        <div class="slide">
+            <div id="slajd">
+
+            <h2>Fotogrametria</h2>
+            Dziedzina nauki i techniki zajmująca się odtwarzaniem kształtów, rozmiarów i wzajemnego położenia obiektów w terenie na podstawie zdjęć fotogrametrycznych (fotogramów).
+                Praktycznym zastosowaniem fotogrametrii jest jej wykorzystanie jako źródła podczas tworzenia map. W geodezji służy jako pomoc przy pomiarach dużych obszarów i odległości.
+                Jest też jedną z metod wyznaczania wysokości obiektów.</p></br>
+              Podczas studiów w Katedrze Geoinformatyki, Fotogrametrii i Teledetekcji na wydziale Geodezji Górniczej i Inżynierii Środowiska zdobyłem niezbędną wiedzę do wykonywania czynności fotogrametry.
+               Zdobywając doświadczenie w lotniczej fotogrametrii doprowadzałem do wyznaczenia elementów orientacji bezwzględnej i przeprowadzałem proces aerotriangulacji na różnych cyfrowych stacjach fotogrametrycznych
+                  takich jak Dephos, Aerosys, SocketSet czy Agisoft PhotoScan</br>
+
+                </br>
+                Zdobyte umiejętności:
+                </br>
+
+                <div class="SkillIcon">
+                <a href="http://www.dephos.com/" target="_blank"><img src="../static/images/Dephos.gif" alt="Dephos" height="60" width="60"/></a>
+                <a href="http://aerosys.aerogeomatics.com/" target="_blank"><img src="../static/images/AeroSys.jpg" alt="AeroSys" height="60"/></a>
+                <a href="http://www.geospatialexploitationproducts.com/content/products/socet-set" target="_blank"><img src="../static/images/Socket.png" alt="SocketSet" height="60" /></a>
+                <a href="http://www.agisoft.com/" target="_blank"><img src="../static/images/Agisoft.jpg" alt="Agisoft PhotoScan" height="60"/></a>
+                </div>
+
+
+            </div>
+		</div>
+        <div class="slide">
+            <div id="slajd">
+
+            <h2>GIS</h2>
+
+                Studiując Geodezję i Kartografię nie sposób nie spotkać się i nie pokochać GISu i jego wszystkich elementów.
+                Moja przygoda z GISem i firmą ESRI rozpoczęła się na obozie "GIS pod Turniami" Koła Naukowego Dahlta, który wspierała finansowo i merytorycznie firma ESRI.
+                Od strony merytorycznej zostaliśmy pomoc w postaci Maksymiliana Ufa, który wprowadził nas i przeszkolił w tematyce analiz geoprzestrzennych oraz wtajemniczył nas w arkana ArcScene, gdzie mogliśmy bez trudu zbierać dane przestrzenne w trójwymiarowym modelu NMT Tatr.
+                Od tego momentu zaczęła się moja pasja tematyką geoprzestrzenną. Przez ten okres wykonałem wiele zadań, analiz i projektów zleconych mi przez dydaktyków AGH.
+                Dzięki aktywnemu udziałowi w kursach na platforimie e-learningowej ESRI training, zdobyłem umiejętności i certyfikaty, dzięki którym potrafię wykorzystać Pythona w programie ArcGis, ułatwiając i przyspieszając sobie i innym wykonanie zadania.
+                Oprócz obeznania w programach ArcGis, posiadam również znajomość i doświadczenie w pracy w opensource'owym programie QGIS oraz komercyjnym IDRISI.</br>
+                </br>
+
+                Zdobyte umiejętności:
+                </br>
+
+                <div class="SkillIcon">
+                <a href="http://www.arcgis.com/" target="_blank"><img src="../static/images/Arcgis.png" alt="ESRI" height="60" width="60"/></a>
+                  <a href="http://www.qgis.org/" target="_blank"><img src="../static/images/qgis.png" alt="QGIS" height="60"/></a>
+                  <a href="http://www.clarklabs.org/index.cfm" target="_blank"><img src="../static/images/idrisi.png" alt="IDRISI" height="60" /></a>
+                  <a href="http://blogs.esri.com/esri/arcgis/2010/02/12/what-is-arcpy/" target="_blank"><img src="../static/images/ArcPy.png" alt="ArcPy" height="60"/></a>
+                 </div>
+
+
+            </div>
+		</div>
+
+
+
 	</div>
+
+
+
+
+
 	<div class="section" id="section2">
 		<div class="intro">
 			<h1>Slooooooww</h1>
@@ -142,6 +261,7 @@
 			<p>Now you can try other demos!</p>
 		</div>
 	</div>
+
 </div>
 
 
