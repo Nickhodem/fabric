@@ -75,7 +75,7 @@ p{
 
 .rozdzial{
     width: 100%;
-    min-height: 100vh;
+    min-height: 50vh;
     background-color:#444444;
 
 }
@@ -177,7 +177,7 @@ label {
   }
 /*end of tooltip for kontakt*/
 
-#menu{
+#menuu{
     list-style-type:none;
     margin: auto;
     padding:0;
@@ -187,16 +187,16 @@ label {
     overflow: hidden;
 }
 
-#menu li{
+#menuu li{
     float:left;
     margin-left:30px;
 }
 
-#menu li:first-child {
+#menuu li:first-child {
     margin-left:0;
 }
 
-#menu li a{
+#menuu li a{
     display:block;
     width:64px;
     height:64px;
@@ -205,14 +205,14 @@ label {
     overflow: hidden;
     background-repeat:no-repeat;
 }
-#menu #facebook a {}
-#menu #youtube a { background-position:-64px 0px; }
-#menu #instagram a { background-position:-128px 0px; }
-#menu #linkedin a { background-position:-194px 0px; }
-#menu #facebook a:hover { background-position:0px -64px; }
-#menu #youtube a:hover { background-position:-64px -64px; }
-#menu #instagram a:hover { background-position:-128px -64px; }
-#menu #linkedin a:hover { background-position:-194px -64px; }
+#menuu #facebook a {}
+#menuu #youtube a { background-position:-64px 0px; }
+#menuu #instagram a { background-position:-128px 0px; }
+#menuu #linkedin a { background-position:-194px 0px; }
+#menuu #facebook a:hover { background-position:0px -64px; }
+#menuu #youtube a:hover { background-position:-64px -64px; }
+#menuu #instagram a:hover { background-position:-128px -64px; }
+#menuu #linkedin a:hover { background-position:-194px -64px; }
 
 #testjq {
     height: 60px;
@@ -229,7 +229,7 @@ label {
 /*hobby  start*/
 #hobby{
     background-color:#666666;
-    min-height:100vh;
+    min-height:50vh;
     padding-top:2.5em;
 }
 #hobbyinside{
@@ -481,4 +481,12 @@ h1, h2, strong{
 
 .tooltipclasss{
     font-family:Audiowide;
+}
+
+#gallery{
+    padding-top:1em;
+    text-align:center;
+    margin-left:30vw;
+    width:40vw;
+
 }

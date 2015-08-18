@@ -16,6 +16,7 @@ urlpatterns = [
     url(r'^', include('knitting.urls')),
     url(r'^swop/', include('swop.urls')),
 
+
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if not settings.DEBUG:

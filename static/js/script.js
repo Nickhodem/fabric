@@ -4,7 +4,7 @@ $(document).ready(function() {
 });
 
 
-/*obsługa zdarzen dla pól hobby */
+/*obsługa zdarzen dla pól hobby*/
 $(document).ready(function(){
 $( ".kaf" ).click(function() {
   $( ".kaf" ).not( this ).toggleClass( "notclass", 1, "easeOutSine" );
@@ -17,6 +17,7 @@ $( ".kaf" ).click(function() {
 
 });
 });
+
 
 /* obsluga zdarzen dla naglowkow*/
 
@@ -68,7 +69,7 @@ $( "#hydepark" ).click(function() {
 });
 });
 
-
+/*koniec obslugi zdarzen dla naglowkow hobby*/
 
 $(document).ready(function() {
     $( ".progressbar" ).progressbar({

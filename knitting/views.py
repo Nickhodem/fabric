@@ -206,3 +206,17 @@ def resume(request):
     else:
         form=ClientKontakt()
     return render(request, '/Documents/Django/fabric/templates/resume.html',{'form':form})
+
+def resumefp(request):
+    #glowny watek rejestracji
+    if request.method == 'POST':
+        form=ClientKontakt(request.POST)
+        if form.is_valid():
+            form.save(commit=True)
+            return render(request, '/Documents/Django/fabric/templates/resumefp.html',{'form':form})
+        else:
+            return notcontact(request)
+    else:
+        form=ClientKontakt()
+    return render(request, '/Documents/Django/fabric/templates/resumefp.html',{'form':form})
+
