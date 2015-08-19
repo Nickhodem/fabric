@@ -31,12 +31,12 @@ caption,th {
     text-align: left;
 
 }
-h1,h2,h3,h4,h5,h6 {
+h2,h3,h4,h5,h6 {
     font-weight: normal;
-    font-size: 100%;
+    font-size: 2.3em;
     margin:0;
     padding:0;
-    color:#444;
+    color:white;
 }
 q:before,q:after {
     content:'';

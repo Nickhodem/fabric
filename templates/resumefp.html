@@ -4,12 +4,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Callbacks - fullPage.js</title>
-	<meta name="author" content="Alvaro Trigo Lopez" />
-	<meta name="description" content="fullPage callback function." />
-	<meta name="keywords"  content="fullpage,jquery,demo,callbac,function,event" />
-	<meta name="Resource-type" content="Document" />
-
+	<title>Resume</title>
 
 	<link rel="stylesheet" href="{% static "css/jquery.fullPage.css" %}">
 	<link rel="stylesheet" href="{% static "css/examples.css" %}">
@@ -243,23 +238,146 @@
 
 
 
-	<div class="section" id="section2">
+	<div class="section" id="section3">
+		<div class="intro" >
+			<h1 style="font-size:2.3em; padding-top:0.5em;padding-down:0.5em;">Wykształcenie</h1>
+
+           <!-- <div class="rozdzial" id="wyksztalcenie"> -->
+
+        <div class="cvbody">
+
+            <div class="cvbod">
+
+                <ul style="list-style-type: square;">
+
+                    <li>Studia magisterskie:
+                        <ul style="list-style-type: circle; margin-left:3vw;"><li>Akademia-Górniczo Hutnicza im. S. Staszica w Krakowie
+                        Wydział Geodezji Górniczej i Inżynierii Środowiska
+                        Specjalizacja: <strong>Geoinformatyka, Fotogrametria i
+                        Teledetekcja Środowiska</strong></li></ul>
+                    </li>
+                    <li>Studia Inżynierskie
+                        <ul style="list-style-type: circle; margin-left:3vw;">
+                            <li>
+                                <strong>Kierunek: Geodezja i Kartografia, WGGiIŚ AGH w Krakowie</strong>
+                                    Praca dyplomowa nt. „Inwentaryzacja zabytkowego silnika Skoda 706RTO
+                                    naziemnym skaningiem laserowym”.
+
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>Liceum
+                        <ul style="list-style-type: circle; margin-left:3vw;">
+                            <li><strong>XXVI Liceum Ogólnokształcące w Łodzi</strong>
+                                im. Krzysztofa Kamila Baczyńskiego
+                                profil: matematyczno-informatyczno-geograficzny
+
+                            </li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+
+
+            <div class="cvbod">
+                <div><h3>Umiejętności:</h3></div>
+                <div>ArcGis Desktop 70%</div>
+                <div class="progressbar" id="Arc"></div>
+                <div>Microstation v8i 80%</div>
+                <div class="progressbar" id="Micro"></div>
+                <div>Faro Scene 60%</div>
+                <div class="progressbar" id="Faro"></div>
+                <div>QGiS 50%</div>
+                <div class="progressbar" id="Qgis"></div>
+                <div>AutoCad 70%</div>
+                <div class="progressbar" id="Cad"></div>
+                <div>Agisoft PhotoScan 40%</div>
+                <div class="progressbar" id="Agi"></div>
+
+                <!--
+                <div>Próba</div>
+                <div id="test">
+                    <div id="cecha1">
+                    </div>
+                    <div id="cecha2">
+                    </div>
+                </div>-->
+
+            </div>
+
+
+
+        </div>
+
+
+        <a href="http://fabric.pythonanywhere.com/media/profile/2015/07/10/CV_Nikodem_Pankiewicz.pdf" download>
+          <div style="width: 8em; background-color:#99FF99; color:black; margin-left: 20vw;border-radius:15px;"><img src="http://icons.iconarchive.com/icons/hopstarter/soft-scraps/16/Button-Download-icon.png" style="margin-left:5px; padding-top:3px;"> pobierz CV</div>
+    </a>
+
+
+    <!--</div>-->
+		</div>
+	</div>
+
+
+
+
+
+
+
+    <div class="section" id="section3">
 		<div class="intro">
-			<h1>Slooooooww</h1>
+			<h1>Hobby</h1>
 			<p>Now you can try other demos!</p>
 		</div>
 	</div>
-    <div class="section" id="section2">
+
+
+
+    <div class="section" id="section3">
 		<div class="intro">
-			<h1>4th Page</h1>
-			<p>Now you can try other demos!</p>
-		</div>
-	</div>
-    <div class="section" id="section2">
-		<div class="intro">
-			<h1>5th Page</h1>
-			<p>Now you can try other demos!</p>
-		</div>
+			<h1 style="font-size:2.3em; padding-top:0.5em;padding-down:2em;">Kontakt</h1>
+            <div class="cvbody">
+
+
+            <div style="display: inline-block; width:60%;margin-top:2em">
+
+                Latitude: <input id="lat" name="lat" value="50.069504">
+                Longitude: <input id="lng" name="lng" value="19.935974" >
+
+        <div id="map"></div>
+                </div>
+
+
+                <div style="display: inline-block; width:39%; text-align:center;">
+            Skontaktuj się ze mną za pomocą tego formularza!
+            <form id="reg_form" method="POST" class="reg-form">{% csrf_token %}
+                <!-- dla ukrytych warst -->
+                {% for hidden in form.hidden_fields %}
+                    {{ hidden }}
+                {% endfor %}
+
+
+                <!-- dla wypelnianych warstw-->
+                {% for field in form.visible_fields %}
+                    {{ field.errors }} </br>
+                    {{ field.help_text }}</br>
+                    {{ field }}</br>
+                    </br>
+                {% endfor %}
+
+            <!-- {{ form.as_p }} -->
+            <button type="submit" class="save btn btn-default">Wyślij</button>
+            </form>
+        </div>
+            </div>
+        </div>
 	</div>
 
 </div>
