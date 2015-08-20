@@ -235,37 +235,24 @@ label {
     padding-top:2.5em;
 }
 #hobbyinside{
-    text-align:left;
+    text-align:center;
 }
 
 
 .kafar{
 
-    height: 4em;
-    width: 100%;
-    margin: auto;
+    height: 15em;
+    width: 15em;
+    margin-right:5em;
     text-align:center;
 
 }
-.kaf:first-child{
-    margin-left:10vw;
-}
-.kaf{
-    height: 15vw;
-    width: 15vw;
-    background-color: #9fda58;
-    float: left;
-    display:inline;
-    margin-right: 5vw;
-    margin-top: 0em;
-    overflow:auto;
-    text-align:center;
-    cursor: pointer;
-
-}
 
 
-#hobbyopis{
+
+
+#hobbyopis1{
+    font-size:1em;
     text-align:center;
 }
 
@@ -286,36 +273,64 @@ label {
 }
 
 
-.newclass{
-    width: 80%;
-    height:500px;
-    border: 5px solid black;
-    background-color: red;
-    margin:auto;
+
+#kaf1{
+    width:80vw;
+    height: 60vh;
+    background-size:80vw;
+    float: left;
+    display:none;
+    margin-right: 5vw;
+    margin-top: 0em;
+    overflow:auto;
     text-align:center;
-}
-
-.notclass{
-    width:0px;
-    height:0px;
-}
-
-
-.kaf1{
+    cursor: pointer;
     background-image:url('https://lh3.googleusercontent.com/-ljSpSKrgJK4/URjxaynkJzI/AAAAAAAAF28/0Qe68qWNkRA/s640-Ic42/06022013098.jpg');
 }
 
-.kaf2{
+#kaf2{
+    width:80vw;
+    height: 60vh;
+    background-size:80vw;
+    float: left;
+    display:none;
+    margin-right: 5vw;
+    margin-top: 0em;
+    overflow:auto;
+    text-align:center;
+    cursor: pointer;
     background-image:url('http://www.visitnorway.com/ImageVaultFiles/id_20367/cf_1174/the-atlantic-road-national-tourist-route-norway_74.JPG');
 }
 
-.kaf3{
+#kaf3{
+    width:80vw;
+    height: 60vh;
+    background-size:80vw;
+    float: left;
+    display:none;
+    margin-right: 5vw;
+    margin-top: 0em;
+    overflow:auto;
+    text-align:center;
+    cursor: pointer;
     background-image:url('https://scontent-ams2-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/923179_4889005586940_87398359_n.jpg?oh=78bcce097dc059724e7dbe7418bd1104&oe=5624BC39');
 }
 
-.kaf4{
+#kaf4{
+    width:80vw;
+    height: 60vh;
+    background-size:80vw;
+    float: left;
+    display:none;
+    margin-right: 5vw;
+    margin-top: 0em;
+    overflow:auto;
+    text-align:center;
+    cursor: pointer;
     background-image:url('https://lh3.googleusercontent.com/-LysLjIsAW7c/S9HoGXheDOI/AAAAAAAAEGE/cXWcwmqGGU8/s640-Ic42/DSC08963.JPG');
 }
+
+
 /*hobby  end*/
 h1, h2, strong{
     text-shadow:black 5px 5px 5px;
@@ -499,3 +514,4 @@ h1, h2, strong{
     padding-left:10vw;
     font-size:1.3em;
 }
+

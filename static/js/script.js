@@ -1,75 +1,3 @@
-/*chowa wszystkie wpisy w hobby*/
-$(document).ready(function() {
-    $("#hobbyopis1, #hobbyopis4").hide();
-});
-
-
-/*obsługa zdarzen dla pól hobby*/
-$(document).ready(function(){
-$( ".kaf" ).click(function() {
-  $( ".kaf" ).not( this ).toggleClass( "notclass", 1, "easeOutSine" );
-  $( "#hobbyopis1, #hobbyopis4" ).toggle( "slide", 1 );
-  $( this ).toggleClass( "kafopen", 1, "easeOutSine" );
-  $("#kaf1").toggleClass("kaf1",1, "easeOutSine" );
-  $("#kaf2").toggleClass("kaf2",1, "easeOutSine" );
-  $("#kaf3").toggleClass("kaf3",1, "easeOutSine" );
-  $("#kaf4").toggleClass("kaf4",1, "easeOutSine" );
-
-});
-});
-
-
-/* obsluga zdarzen dla naglowkow*/
-
-$(document).ready(function(){
-$( "#narty" ).click(function() {
-  $( ".kaf" ).not( "#kaf1" ).toggleClass( "notclass", 1, "easeOutSine" );
-  $( "#hobbyopis1, #hobbyopis4" ).toggle( "slide", 1 );
-  $( "#kaf1" ).toggleClass( "kafopen", 1, "easeOutSine" );
-  $("#kaf1").toggleClass("kaf1",1, "easeOutSine" );
-  $("#kaf2").toggleClass("kaf2",1, "easeOutSine" );
-  $("#kaf3").toggleClass("kaf3",1, "easeOutSine" );
-  $("#kaf4").toggleClass("kaf4",1, "easeOutSine" );
-});
-});
-
-$(document).ready(function(){
-$( "#rower" ).click(function() {
-  $( ".kaf" ).not( "#kaf2" ).toggleClass( "notclass", 1, "easeOutSine" );
-  $( "#hobbyopis1, #hobbyopis4" ).toggle( "slide", 1 );
-  $( "#kaf2" ).toggleClass( "kafopen", 1, "easeOutSine" );
-  $("#kaf1").toggleClass("kaf1",1, "easeOutSine" );
-  $("#kaf2").toggleClass("kaf2",1, "easeOutSine" );
-  $("#kaf3").toggleClass("kaf3",1, "easeOutSine" );
-  $("#kaf4").toggleClass("kaf4",1, "easeOutSine" );
-});
-});
-
-$(document).ready(function(){
-$( "#gory" ).click(function() {
-  $( ".kaf" ).not( "#kaf3" ).toggleClass( "notclass", 1, "easeOutSine" );
-  $( "#hobbyopis1, #hobbyopis4" ).toggle( "slide", 1 );
-  $( "#kaf3" ).toggleClass( "kafopen", 1, "easeOutSine" );
-  $("#kaf1").toggleClass("kaf1",1, "easeOutSine" );
-  $("#kaf2").toggleClass("kaf2",1, "easeOutSine" );
-  $("#kaf3").toggleClass("kaf3",1, "easeOutSine" );
-  $("#kaf4").toggleClass("kaf4",1, "easeOutSine" );
-});
-});
-
-$(document).ready(function(){
-$( "#hydepark" ).click(function() {
-  $( ".kaf" ).not( "#kaf4" ).toggleClass( "notclass", 1, "easeOutSine" );
-  $( "#hobbyopis1, #hobbyopis4" ).toggle( "slide", 1 );
-  $( "#kaf4" ).toggleClass( "kafopen", 1, "easeOutSine" );
-  $("#kaf1").toggleClass("kaf1",1, "easeOutSine" );
-  $("#kaf2").toggleClass("kaf2",1, "easeOutSine" );
-  $("#kaf3").toggleClass("kaf3",1, "easeOutSine" );
-  $("#kaf4").toggleClass("kaf4",1, "easeOutSine" );
-});
-});
-
-/*koniec obslugi zdarzen dla naglowkow hobby*/
 
 $(document).ready(function() {
     $( ".progressbar" ).progressbar({
@@ -78,43 +6,10 @@ $(document).ready(function() {
   });
 
 
-$(document).ready(function() {
-$( ".cvbod" ).mouseenter(function() {
-$("#Arc .ui-progressbar-value").animate({width: "70%"}, {queue: false});
-$("#Micro .ui-progressbar-value").animate({width: "80%"}, {queue: false});
-$("#Faro .ui-progressbar-value").animate({width: "60%"}, {queue: false});
-$("#Qgis .ui-progressbar-value").animate({width: "50%"}, {queue: false});
-$("#Cad .ui-progressbar-value").animate({width: "70%"}, {queue: false});
-$("#Agi .ui-progressbar-value").animate({width: "40%"}, {queue: false});
-    });
- });
-
 
 $(document).ready(function() {
 $(".progressbar").css({ 'background': '#444444' });
 });
-
-
-
-$(document).ready(function() {
-    function latlong() {
-      return new google.maps.LatLng( $("#lat").val(), $("#lng").val() );
-    }
-    function position() {
-      map.setCenter( latlong() );
-    }
-    $( "#lat, #lng" ).spinner({
-      step: .001,
-      change: position,
-      stop: position
-    });
-
-    var map = new google.maps.Map( $("#map")[0], {
-      zoom: 19,
-      center: latlong(),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
-  });
 
 
 
@@ -138,30 +33,26 @@ $(document).ready(function() {
 });
 
 
-$(function() {
-    $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
-    $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
-});
-
-
-
-/* POP UP*/
-
-$(function() {
-    $('.link').click(function(e) {
-        //jeżeli popup nie jest widoczny to go pokaż
-        if (!$('.popup:visible').length) {
-            $('.popup').fadeIn();
-        }
-        e.preventDefault();
-        return false;
+$(document).ready(function() {
+    function latlong() {
+      return new google.maps.LatLng( $("#lat").val(), $("#lng").val() );
+    }
+    function position() {
+      map.setCenter( latlong() );
+    }
+    $( "#lat, #lng" ).spinner({
+      step: .001,
+      change: position,
+      stop: position
     });
 
-    //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
-    $('.popup .close, .popup .bg').click(function() {
-        $(this).parents('.popup').fadeOut();
+    var map = new google.maps.Map( $("#map")[0], {
+      zoom: 19,
+      center: latlong(),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-})
+  });
+
 
 
 
@@ -191,3 +82,95 @@ $(function() {
   });
 
 
+
+
+(function($) {
+
+         // DOM Ready
+        $(function() {
+
+            // Binding a click event
+            // From jQuery v.1.7.0 use .on() instead of .bind()
+            $('#my-button1').bind('click', function(e) {
+
+                // Prevents the default action to be triggered.
+                e.preventDefault();
+
+                // Triggering bPopup when click event is fired
+                $('#kaf1').bPopup({easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown'});
+
+            });
+
+        });
+
+    })(jQuery);
+
+(function($) {
+
+         // DOM Ready
+        $(function() {
+
+            // Binding a click event
+            // From jQuery v.1.7.0 use .on() instead of .bind()
+            $('#my-button2').bind('click', function(e) {
+
+                // Prevents the default action to be triggered.
+                e.preventDefault();
+
+                // Triggering bPopup when click event is fired
+                $('#kaf2').bPopup({easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown'});
+
+            });
+
+        });
+
+    })(jQuery);
+    (function($) {
+
+         // DOM Ready
+        $(function() {
+
+            // Binding a click event
+            // From jQuery v.1.7.0 use .on() instead of .bind()
+            $('#my-button3').bind('click', function(e) {
+
+                // Prevents the default action to be triggered.
+                e.preventDefault();
+
+                // Triggering bPopup when click event is fired
+                $('#kaf3').bPopup({easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown'});
+
+            });
+
+        });
+
+    })(jQuery);
+    (function($) {
+
+         // DOM Ready
+        $(function() {
+
+            // Binding a click event
+            // From jQuery v.1.7.0 use .on() instead of .bind()
+            $('#my-button4').bind('click', function(e) {
+
+                // Prevents the default action to be triggered.
+                e.preventDefault();
+
+                // Triggering bPopup when click event is fired
+                $('#kaf4').bPopup({easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown',
+            modalColor: 'grey'});
+
+            });
+
+        });
+
+    })(jQuery);
